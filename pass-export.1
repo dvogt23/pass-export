@@ -1,0 +1,60 @@
+.TH pass-export 1 "April 2020" "pass-export"
+
+.SH NAME
+pass export - A \fBpass\fP(1) extension that exports (all/given) passwords in csv format
+
+.SH SYNOPSIS
+\fBpass export\fP [ \fICOMMAND\fP ] <\fIFILENAME\fP>
+
+.SH DESCRIPTION
+\fBpass export\fP extends the pass with a export command thats exports (all/given) passwords in csv format to stdout
+
+.SH COMMAND
+.TP
+\fBall\fP
+Export all passwords to csv format (path;name;password;otp-secret;note)
+
+.TP
+\fIpass-name\fP
+Get file from password-store to current location
+
+.SH EXAMPLES
+.TP
+Export all passwords
+.B zx2c4@laptop ~ $ pass export a
+
+Export a password dir
+.B zx2c4@laptop ~ $ pass export social
+
+Export a password entry
+.B zx2c4@laptop ~ $ pass export social/twitter.com
+
+.SH SEE ALSO
+.BR pass(1),
+.BR pass-update(1),
+.BR pass-tomb(1),
+.BR pass-import(1),
+.BR pass-otp(1)
+
+
+.SH AUTHORS
+.B pass file
+was written by
+.MT divogt@dima23.de
+Dimitrij Vogt
+.ME .
+
+
+.SH COPYING
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
