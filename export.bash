@@ -57,7 +57,7 @@ _get_entries_from_dir() {
 # export all
 cmd_export_all() {
 	_PS_LENGTH=${#PASSWORD_STORE}
-	for ENTRY in $(find "${PASSWORD_STORE}" -type f -name "*.gpg")
+	for ENTRY in $(find "${PASSWORD_STORE}/" -type f -name "*.gpg")
 	do
 		_NAME="${ENTRY:_PS_LENGTH + 1}"
 		cmd_export "${_NAME/.gpg/}"
