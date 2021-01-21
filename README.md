@@ -4,7 +4,7 @@ A pass extension that exports given passwords in csv format
 
 ## Description
 
-_pass-export_ extends the pass with a export command thats exports (all/given) passwords in csv format to stdout
+_pass-export_ extends the pass with a export command thats exports (all/given) passwords in csv (+bitwarden) format to stdout. Also look here for other cool extensions: [awesome-password-store](https://github.com/tijn/awesome-password-store)!
 
 ## Usage
 
@@ -17,7 +17,7 @@ Usage:
 
     Options:
     a, all                   Export all passwords
-            b, bitwarden     Export in bitwarden CSV format
+    b, bitwarden     Export in bitwarden CSV format
     -v, --version    Show version information.
     -h, --help               Print this help message and exit.
 
