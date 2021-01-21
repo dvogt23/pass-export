@@ -1,4 +1,4 @@
-PROG ?= file
+PROG ?= export
 PREFIX ?= /usr
 DESTDIR ?=
 LIBDIR ?= $(PREFIX)/lib
