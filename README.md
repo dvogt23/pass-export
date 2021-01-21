@@ -1,19 +1,23 @@
 # pass export
+
 A pass extension that exports given passwords in csv format
 
 ## Description
-*pass-export* extends the pass with a export command thats exports (all/given) passwords in csv format to stdout
+
+_pass-export_ extends the pass with a export command thats exports (all/given) passwords in csv format to stdout
 
 ## Usage
+
 ```
-pass export 1.0 - A pass extension that exports (all/given) passwords in csv format
+pass export 1.1 - A pass extension that exports (all/given) passwords in csv format
 
 Usage:
-    pass export [a | --all] [<pass-name> | <pass-dir>] [-v | --version] [-h | --help]
+    pass export [a | all] [b | bitwarden] [<pass-name> | <pass-dir>] [-v | --version] [-h | --help]
     Provide a command to export passwords in csv format
 
     Options:
     a, all                   Export all passwords
+            b, bitwarden     Export in bitwarden CSV format
     -v, --version    Show version information.
     -h, --help               Print this help message and exit.
 
@@ -21,7 +25,9 @@ Usage:
 ```
 
 ## Installation
+
 **From git**
+
 ```sh
 git clone https://github.com/dvogt23/pass-export/
 cd pass-export
@@ -29,6 +35,7 @@ sudo make install
 ```
 
 **OS X**
+
 ```sh
 git clone https://github.com/dvogt23/pass-export/
 cd pass-export
@@ -36,30 +43,42 @@ make install PREFIX=/usr/local
 ```
 
 **Requirements**
-* `pass 1.7.0` or greater.
-* If you do not want to install this extension as system extension, you need to enable user extension with `PASSWORD_STORE_ENABLE_EXTENSIONS=true pass`. You can create an alias in `.bashrc`: `alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'`
+
+- `pass 1.7.0` or greater.
+- If you do not want to install this extension as system extension, you need to enable user extension with `PASSWORD_STORE_ENABLE_EXTENSIONS=true pass`. You can create an alias in `.bashrc`: `alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'`
 
 ## Examples
 
-*Export all passwords*
+_Export all passwords_
+
 ```
 zx2c4@laptop ~ $ pass export a
 ```
 
-*Export a password dir*
+_Export all passwords_ in bitwarden format
+
+```
+zx2c4@laptop ~ $ pass export a b
+```
+
+_Export a password dir_
+
 ```
 zx2c4@laptop ~ $ pass export social
 ```
 
-*Export a password entry*
+_Export a password entry_
+
 ```
 zx2c4@laptop ~ $ pass export social/twitter.com
 ```
 
 ## Contribution
+
 Feedback, contributors, pull requests are welcome.
 
 ## License
+
 ```
     Copyright (C) 2017
 

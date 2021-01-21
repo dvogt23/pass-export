@@ -15,7 +15,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-readonly VERSION="1.0"
+readonly VERSION="1.1"
 PASSWORD_STORE=${PASSWORD_STORE:-$HOME/.password-store}
 SEPERATOR=","
 OTP_PAT='.*secret=(.*)&'
